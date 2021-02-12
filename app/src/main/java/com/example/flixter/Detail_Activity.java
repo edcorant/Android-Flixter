@@ -24,8 +24,8 @@ import okhttp3.Headers;
 public class Detail_Activity extends YouTubeBaseActivity {
 
     public final String TAG = getClass().getCanonicalName();
-    private static final String YOUTUBE_API_KEY = "AIzaSyAtVoGZdhNul4XAvXng4gjta61Mzopu3M8",
-    VIDEOS_URL = "https://api.themoviedb.org/3/movie/%d/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
+    private final String YOUTUBE_API_KEY = getString(R.string.YOUTUBE_API_KEY);
+    private static final String VIDEOS_URL = "https://api.themoviedb.org/3/movie/%d/videos?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed";
 
     private TextView on_screen_title, on_screen_overview;
     private RatingBar on_screen_rating;
